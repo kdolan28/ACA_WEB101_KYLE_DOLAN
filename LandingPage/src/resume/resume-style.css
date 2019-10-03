@@ -1,0 +1,61 @@
+body {
+  background-image: url("/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+header {
+  text-align: center;
+  padding-bottom: 50px;
+}
+h1 {
+  text-decoration: underline;
+}
+pre {
+  font-size: 15px;
+}
+h2 {
+  text-decoration: underline;
+}
+.skills {
+  float: left;
+  width: 50%;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.achieve {
+  float: right;
+  width: 50%;
+  padding-bottom: 50px;
+  text-align: center;
+}
+ul {
+  list-style-position: inside;
+}
+.work {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.education {
+  text-align: center;
+}
+h5 {
+  font-style: italic;
+}
+.fa-linkedin {
+  padding: 0px 10px;
+  font-size: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.fa-facebook {
+  padding: 0px 10px 0px 10px;
+  font-size: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.fa-twitter {
+  padding: 0px 0px 0px 10px;
+  font-size: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
