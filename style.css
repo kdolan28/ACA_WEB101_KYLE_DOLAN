@@ -94,12 +94,13 @@ button {
   padding: 20px;
   padding-bottom: 5%;
   text-align: center;
-  color: white;
-  letter-spacing: 16px;
+  color: black;
+  letter-spacing: 5px;
   font-style: italic;
+  font-weight: bold;
 }
 /* Medium and up (Tablets) */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   header {
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: 60% 40%;
@@ -117,12 +118,16 @@ button {
     font-size: 90%;
   }
   body {
-    background-size: cover;
+    background-image: cover;
+    height: 100%;
   }
   #profile-pic {
     margin: auto;
   }
   main {
     grid-template-columns: 10% 80% 10%;
+  }
+  button {
+    font-size: 90%;
   }
 }
