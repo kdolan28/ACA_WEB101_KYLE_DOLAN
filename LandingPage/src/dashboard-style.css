@@ -137,7 +137,7 @@ button:hover {
   font-weight: 700;
 }
 .calendar .date div.day:first-child,
-.calendar .date div.day:nth-child(7n + 1) {
+.calendar .date div.number:nth-child(7n + 1) {
   color: #ff685d;
   font-weight: 700;
 }
