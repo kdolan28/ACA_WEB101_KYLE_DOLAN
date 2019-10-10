@@ -11,50 +11,51 @@
     <div class="container">
       <header>
         <h1>This is a Dashboard</h1>
-        <aside>
-          <div class="calculator">
-            <input type="text" class="calculator-screen" value="0" diabled />
-            <div class="calculator-keys">
-              <button type="button" class="operator" value="+">+</button>
-              <button type="button" class="operator" value="-">-</button>
-              <button type="button" class="operator" value="*">&times;</button>
-              <button type="button" class="operator" value="/">&divide;</button>
-              <button type="button" value="7">7</button>
-              <button type="button" value="8">8</button>
-              <button type="button" value="9">9</button>
-              <button type="button" value="4">4</button>
-              <button type="button" value="5">5</button>
-              <button type="button" value="6">6</button>
-              <button type="button" value="1">1</button>
-              <button type="button" value="2">2</button>
-              <button type="button" value="3">3</button>
-              <button type="button" value="0">0</button>
-              <button type="button" class="decimal" value=".">.</button>
-              <button type="button" class="all-clear" value="all-clear">
-                AC
-              </button>
-              <button type="button" class="equal-sign" value="equal-sign">
-                =
-              </button>
-            </div>
-          </div>
-        </aside>
       </header>
+      <aside class="aside1">
+        <div class="calculator">
+          <input type="text" class="calculator-screen" value="0" diabled />
+          <div class="calculator-keys">
+            <button type="button" class="operator" value="+">+</button>
+            <button type="button" class="operator" value="-">-</button>
+            <button type="button" class="operator" value="*">&times;</button>
+            <button type="button" class="operator" value="/">&divide;</button>
+            <button type="button" value="7">7</button>
+            <button type="button" value="8">8</button>
+            <button type="button" value="9">9</button>
+            <button type="button" value="4">4</button>
+            <button type="button" value="5">5</button>
+            <button type="button" value="6">6</button>
+            <button type="button" value="1">1</button>
+            <button type="button" value="2">2</button>
+            <button type="button" value="3">3</button>
+            <button type="button" value="0">0</button>
+            <button type="button" ss="decimal" value=".">.</button>
+            <button type="button" class="all-clear" value="all-clear">
+              AC
+            </button>
+            <button type="button" class="equal-sign" value="equal-sign">
+              =
+            </button>
+          </div>
+        </div>
+      </aside>
+      <aside class="aside2">
+        <div id="to-do" class="header">
+          <input type="text" id="input" placeholder="title" />
+          <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+        <ul>
+          <li>This is the first item</li>
+          <li>This is the second item</li>
+          <li>This is the third item</li>
+          <li>This is the fourth item</li>
+        </ul>
+      </aside>
       <h2>This is where you will come to start your day and get organized</h2>
       <main>
         <div class="clock">23:59:59</div>
-        <aside>
-          <div id="to-do" class="header">
-            <input type="text" id="input" placeholder="title" />
-            <span onclick="newElement()" class="addBtn">Add</span>
-          </div>
-          <ul>
-            <li>This is the first item</li>
-            <li>This is the second item</li>
-            <li>This is the third item</li>
-            <li>This is the fourth item</li>
-          </ul>
-        </aside>
+
         <div class="calendar">
           <div class="image">
             <h2>9, Wednesday</h2>

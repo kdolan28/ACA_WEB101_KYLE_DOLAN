@@ -1,14 +1,23 @@
+body {
+  background-color: lightsteelblue;
+}
 header {
   grid-area: header;
+  text-align: center;
 }
-aside {
-  grid-area: aside;
+.aside1 {
+  display: flex;
+  justify-content: center;
+  grid-area: aside1;
+}
+.aside2 {
+  grid-area: aside2;
 }
 main {
   grid-area: main;
-}
-h1 {
-  grid-area: h1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 h2 {
   grid-area: h2;
@@ -21,9 +30,6 @@ h2 {
 .calculator {
   border: 1px solid #ccc;
   border-radius: 5px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
   width: 200px;
 }
 .calculator-screen {
@@ -86,6 +92,7 @@ button:hover {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px 10px;
   padding: 10px;
+  width: 100%;
 }
 .calendar {
   width: 300px;
@@ -142,11 +149,11 @@ button:hover {
 }
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% 1fr 1fr;
   grid-template-areas:
-    "header" "header"
-    "aside" "h1"
-    "aide" "h2"
-    "main" "main";
+    "header h2 h2"
+    "aside1 main main"
+    "aside2 main main ";
+  border: 1px solid black;
 }
