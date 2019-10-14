@@ -7,7 +7,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  min-width: 200px;
+  max-width: 200px;
   box-sizing: border-box;
   border: 1px solid black;
   flex: 0 1 25%;
@@ -27,6 +27,7 @@ body {
 button {
   height: 30px;
   flex: 0 1 25%;
+  cursor: pointer;
 }
 button.equal-sign {
   flex-grow: 1;
