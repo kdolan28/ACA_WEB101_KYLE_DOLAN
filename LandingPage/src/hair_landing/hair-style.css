@@ -1,8 +1,54 @@
+body {
+}
+header {
+  font-family: "Arial black", Gadget, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
 ul {
   display: flex;
   list-style-type: none;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  color: black;
 }
-li {
-  padding: 5px;
+
+#nav {
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+#nav > li {
+  padding: 0 20px 0;
+}
+ul li a:hover,
+li.selected a {
+  color: #0ba39c;
+}
+a {
+  text-decoration-line: none;
+  color: black;
+}
+span {
+  font-family: "Poller One";
+  text-transform: uppercase;
+  font-size: 20px;
+  color: black;
+}
+.styles {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.styles > li {
+  padding: 0 10px 0;
 }
