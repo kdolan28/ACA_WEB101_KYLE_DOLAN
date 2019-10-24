@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  background: #333;
+}
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+.contact {
+  box-shadow: 0 0 20px 0 rgba(219, 219, 217, 0.7);
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+.container h3 {
+  text-transform: uppercase;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
