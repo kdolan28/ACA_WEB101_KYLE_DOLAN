@@ -73,9 +73,10 @@ section {
   display: flex;
   flex-flow: row wrap;
   margin: 1em 1em 0;
+  justify-content: center;
 }
 iframe {
-  width: 100%;
+  min-width: 75%;
   height: 350px;
   border: none;
   margin-bottom: 1em;
