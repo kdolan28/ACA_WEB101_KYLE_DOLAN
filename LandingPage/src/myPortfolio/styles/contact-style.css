@@ -10,17 +10,49 @@ body {
 }
 .container {
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1.5em;
   padding: 1em;
+  box-shadow: 0 0 20px 0 rgba(219, 219, 217, 0.7);
+}
+.about {
+  text-align: center;
+  color: lightskyblue;
+}
+.stats {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.fa {
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  margin: 0 10px;
+  font-size: 0.5rem;
+}
+.fa-facebook {
+  padding-left: 17px;
+  padding-right: 17px;
+  background: #3b5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
 }
 .contact {
-  box-shadow: 0 0 20px 0 rgba(219, 219, 217, 0.7);
   text-align: center;
   margin: 0 0 1rem 0;
 }
-.container h3 {
+h3 {
   text-transform: uppercase;
+  padding-top: 1em;
+  margin: 0;
+  color: lightskyblue;
 }
 form {
   display: grid;
@@ -35,10 +67,7 @@ form {
 label {
   color: lightskyblue;
 }
-h3 {
-  color: lightskyblue;
-  font-size: 2rem;
-}
+
 input {
   height: 2em;
   padding-left: 1em;
@@ -80,6 +109,12 @@ button:hover {
   flex-flow: column;
 }
 @media (min-width: 700px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-content: center;
+    margin: 5em auto 5em;
+  }
   form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -98,5 +133,13 @@ button:hover {
   }
   .submit {
     margin: 0;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  h1 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
   }
 }
