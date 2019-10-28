@@ -13,6 +13,7 @@ body {
   margin: 1.5em;
   padding: 1em;
   box-shadow: 0 0 20px 0 rgba(219, 219, 217, 0.7);
+  border-radius: 5px;
 }
 .about {
   text-align: center;
@@ -36,8 +37,8 @@ ul {
   font-size: 0.5rem;
 }
 .fa-facebook {
-  padding-left: 17px;
-  padding-right: 17px;
+  padding-left: 18px;
+  padding-right: 18px;
   background: #3b5998;
   color: white;
 }
@@ -108,6 +109,11 @@ button:hover {
   align-items: center;
   flex-flow: column;
 }
+footer {
+  color: lightskyblue;
+  text-align: center;
+  font-size: 0.5rem;
+}
 @media (min-width: 700px) {
   .container {
     display: grid;
@@ -126,7 +132,7 @@ button:hover {
     grid-column: 1 / span 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    justify-items: left;
   }
   .reset {
     margin: 0;
@@ -141,5 +147,15 @@ button:hover {
   h1 {
     writing-mode: vertical-rl;
     text-orientation: upright;
+    line-height: 2em;
+  }
+  h3 {
+    text-align: left;
+    margin-left: 0.8em;
+  }
+  .stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
