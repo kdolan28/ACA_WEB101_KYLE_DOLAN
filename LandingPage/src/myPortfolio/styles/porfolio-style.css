@@ -53,6 +53,15 @@ h6 {
 .btn:hover {
   background: lightskyblue;
 }
+.abt {
+  color: lightskyblue;
+  font-size: 0.75em;
+  position: relative;
+  top: 25px;
+}
+.abt:hover {
+  opacity: 0.8;
+}
 #main {
   display: flex;
   flex-flow: row wrap;

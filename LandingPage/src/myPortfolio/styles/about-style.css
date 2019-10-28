@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #333;
+}
+#banner {
+  min-height: 500px;
+  color: #fff;
+  margin-bottom: 1em;
+}
+#banner .bg-image {
+  background: #333 url(/LandingPage/src/imgs/question.jpg);
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  z-index: -1;
+  color: whitesmoke;
+}
+h1 {
+  text-align: center;
+  position: relative;
+  top: 200px;
+  font-size: 3rem;
+}
+#hellboy {
+  width: 200px;
+  height: 200px;
+}
+.box {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
