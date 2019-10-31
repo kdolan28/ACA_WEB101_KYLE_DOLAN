@@ -82,6 +82,10 @@ header {
   display: flex;
   padding-right: 5px;
   align-items: center;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
 }
 
 .navbar-nav li a {
@@ -110,6 +114,9 @@ main {
   border-radius: 50%;
   margin: 15% auto;
   grid-column: 1/4;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  animation-delay: 1.5s;
 }
 
 h1 {
@@ -149,6 +156,10 @@ button {
   letter-spacing: 5px;
   font-style: italic;
   font-weight: bold;
+  animation: shake;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
 }
 @media (max-width: 568px) {
   .navbar-nav {
