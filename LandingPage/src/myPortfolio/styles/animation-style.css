@@ -13,7 +13,7 @@ body {
   background-color: lightseagreen;
   border: 1px solid black;
   margin-bottom: 10px;
-  transition: 1s ease-in-out;
+  transition: 1.5s ease-in-out;
 }
 
 .square:hover {
