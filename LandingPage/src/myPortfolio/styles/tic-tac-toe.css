@@ -37,4 +37,5 @@ body {
 .q {
   background-color: darkgrey;
   cursor: pointer;
+  padding-top: 10px;
 }
