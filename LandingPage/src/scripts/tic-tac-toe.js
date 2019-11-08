@@ -1,17 +1,17 @@
-var gameMarker = "x";
+var gameMarker = "X";
 
 function changeMarkerToX() {
   document.getElementById("btn-x").innerHTML = "X";
-  var gameMarker = "X";
+  gameMarker = "X";
   console.log("The x button was clicked!");
 }
 
 function changeMarkerToO() {
   document.getElementById("btn-o").innerHTML = "O";
-  var gameMarker = "O";
+  gameMarker = "O";
   console.log("The o button was clicked!");
 }
 
-function placeMark() {
-  document.getElementById("q0").innerHTML = gameMarker;
+function placeMark(mySquare) {
+  document.getElementById(mySquare).innerHTML = gameMarker;
 }
