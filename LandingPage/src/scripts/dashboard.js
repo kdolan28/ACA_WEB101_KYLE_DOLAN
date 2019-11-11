@@ -1,10 +1,10 @@
 $(function() {
   let $list = $("ul");
-  let $newItem = $("#newItem");
+  let $newItemForm = $("#newItemForm");
 
-  $newItem.on("submit", function(e) {
+  $newItemForm.on("submit", function(e) {
     e.preventDefault();
-    let text = $('input[type="text"]').val();
+    let text = $('input[type="text"]').val("");
     $list.append(`<li>${text}</li>`);
     $('input[type="text"]').val("");
   });
