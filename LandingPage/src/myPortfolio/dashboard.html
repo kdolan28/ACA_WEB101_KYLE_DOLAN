@@ -44,16 +44,19 @@
         </div>
       </aside>
       <aside class="aside2">
-        <div id="to-do" class="header">
-          <input type="text" id="input" placeholder="title" />
-          <button type="button" id="add" value="submit">Add</button>
+        <div id="to-do">
+          <div id="addButton">
+            <form id="newItem">
+              <input type="text" id="itemField" placeholder="title" />
+              <input type="submit" id="add" value="add" />
+            </form>
+          </div>
+
+          <ul>
+            <li class="item">This is the first item</li>
+          </ul>
+          <div id="newItemButton"><button href="#">new item</button></div>
         </div>
-        <ul>
-          <li>This is the first item</li>
-          <li>This is the second item</li>
-          <li>This is the third item</li>
-          <li>This is the fourth item</li>
-        </ul>
       </aside>
       <h2>This is where you will come to start your day and get organized</h2>
       <section>
@@ -110,5 +113,7 @@
         </div>
       </main>
     </div>
+    <script src="/node_modules/jquery-3.4.1.min.js"></script>
+    <script src="/LandingPage/src/scripts/dashboard.js"></script>
   </body>
 </html>
