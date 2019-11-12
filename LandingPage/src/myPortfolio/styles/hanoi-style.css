@@ -1,9 +1,19 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  background: #666;
+}
+
 [data-row] {
   display: flex;
   justify-content: flex-start;
+  flex-direction: column-reverse;
   align-items: center;
-  height: 34px;
+  height: 500px;
+  width: 15px;
   margin: 25px;
+  margin-bottom: 0;
   border: 1px solid lightgray;
 }
 
@@ -19,32 +29,31 @@
   background-color: #baf6ba;
 }
 
-[data-row].blue {
-  background-color: aliceblue;
-}
-
 [data-color] {
-  width: 25px;
+  width: 90px;
   float: left;
 }
 
 [data-color="blue"] {
-  height: 33px;
+  height: 20px;
   background-color: blue;
 }
 
 [data-color="green"] {
-  height: 33px;
+  height: 20px;
+  width: 120px;
   background-color: green;
 }
 
 [data-color="red"] {
-  height: 33px;
+  height: 20px;
+  width: 150px;
   background-color: red;
 }
 
 [data-color="yellow"] {
-  height: 33px;
+  height: 20px;
+  width: 180px;
   background-color: yellow;
 }
 
