@@ -4,7 +4,7 @@ $(function() {
 
   $newItemForm.on("submit", function(e) {
     e.preventDefault();
-    let text = $('input[type="text"]').val("");
+    let text = $('#newItemForm input[type="text"]').val();
     $list.append(`<li>${text}</li>`);
     $('input[type="text"]').val("");
   });
@@ -14,3 +14,21 @@ $(function() {
     $this.remove();
   });
 });
+
+var myLocation = document.getElementById("my-coordinates");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(displayPosition);
+  } else {
+    myLocation.innerHTML = "Not available";
+  }
+}
+
+function displayPosition(position) {
+  myLocation.innerHTML =
+    "Longitude: " +
+    position.coords.longitude +
+    " Latitude: " +
+    position.coords.latitude;
+}

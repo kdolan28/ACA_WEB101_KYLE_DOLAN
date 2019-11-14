@@ -11,13 +11,14 @@
     <title>Dashboard</title>
   </head>
   <body>
+    <div id="bg-image"></div>
     <div class="container">
       <header>
         <h1>Dashboard</h1>
       </header>
       <aside class="aside1">
         <div class="calculator">
-          <input type="text" class="calculator-screen" value="0" disabled />
+          <input type="text" id="calculator-screen" value="0" disabled />
           <div class="calculator-keys">
             <button type="button" class="operator" value="+">+</button>
             <button type="button" class="operator" value="-">-</button>
@@ -44,27 +45,9 @@
         </div>
       </aside>
       <aside class="aside2">
-        <div id="to-do">
-          <div id="addButton">
-            <form id="newItemForm">
-              <input type="text" id="itemField" placeholder="Item" />
-              <input type="submit" id="add" value="add" />
-            </form>
-          </div>
-          <ul>
-            <li class="item">This is the first item</li>
-          </ul>
-          <div id="newItemButton"><button href="">new item</button></div>
-        </div>
-      </aside>
-      <h2>This is where you will come to start your day and get organized</h2>
-      <section>
-        <div class="clock">23:59:59</div>
-      </section>
-      <main>
         <div class="calendar">
           <div class="image">
-            <h2>9, Wednesday</h2>
+            <h2>31, Thursday</h2>
             <h3>October | 2019</h3>
           </div>
           <div class="date">
@@ -85,7 +68,7 @@
             <div class="number">6</div>
             <div class="number">7</div>
             <div class="number">8</div>
-            <div class="number active">9</div>
+            <div class="number">9</div>
             <div class="number">10</div>
             <div class="number">11</div>
             <div class="number">12</div>
@@ -107,10 +90,34 @@
             <div class="number">28</div>
             <div class="number">29</div>
             <div class="number">30</div>
-            <div class="number">31</div>
+            <div class="number active">31</div>
+          </div>
+        </div>
+      </aside>
+      <section>
+        <div class="clock">23:59:59</div>
+      </section>
+      <main>
+        <h2>What do you need to do today?</h2>
+        <div id="to-do">
+          <div id="addButton">
+            <form id="newItemForm">
+              <input type="text" id="itemField" placeholder="Item" />
+              <input type="submit" id="add" value="add" />
+            </form>
+          </div>
+          <ul>
+            <li class="item">This is the first item</li>
+          </ul>
+          <div id="newItemButton">
+            <button id="btn" href="#">new item</button>
           </div>
         </div>
       </main>
+      <div class="location">
+        <button class="locator" onclick="getLocation()">Get Location!</button>
+        <p id="my-coordinates"></p>
+      </div>
     </div>
     <script src="/node_modules/jquery-3.4.1.min.js"></script>
     <script src="/LandingPage/src/scripts/dashboard.js"></script>
