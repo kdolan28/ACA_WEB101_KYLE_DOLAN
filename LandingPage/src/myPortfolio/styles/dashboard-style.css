@@ -117,6 +117,7 @@ h2 {
   font-family: fantasy;
   letter-spacing: 5px;
   margin-top: 23%;
+  text-shadow: 0 0 10px #00ac7c;
 }
 .calculator {
   border: 1px solid black;
