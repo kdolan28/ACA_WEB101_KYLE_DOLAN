@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="cookie.css" />
+    <title>0 Cookies</title>
+  </head>
+  <body>
+    <div class="cookie-box">
+      <div id="banner">
+        <input type="text" id="text" value="0" /><span id="label"
+          >Cookies!</span
+        >
+        <p id="cookiesPerSecond">0 cookies p/s!</p>
+      </div>
+      <a href="#" onclick="add()"><img id="cookie" src="cookie.png"/></a>
+      <div class="save-load">
+        <button id="save"><a href="#" onclick="save()">Save</a></button>
+        <button id="load"><a href="#" onclick="load()">Load</a></button>
+      </div>
+    </div>
+    <div class="upgrade-box">
+      <div class="click-upgrade">
+        <p>Buy 1 Auto Clicker</p>
+        <button class="upgrades">
+          <a href="#" onclick="buyAutoClick()"
+            ><img id="cursor" src="cursor.png"
+          /></a>
+        </button>
+        <p id="costAutoClick">Cookies</p>
+        <p id="amountAutoClick">You own 0 Auto Clickers</p>
+      </div>
+      <div class="farm-upgrade">
+        <p>Buy 1 Farm</p>
+        <button class="upgrades">
+          <a href="#" onclick="buyFarm()"><img id="farm" src="farm.png"/></a>
+        </button>
+        <p id="costFarms">15 Cookies</p>
+        <p id="amountFarms">You Own 0 Farms</p>
+      </div>
+      <div class="multiplier-upgrade">
+        <p id="amountMultiplier">Multiplier Upgrade x2.</p>
+        <button class="upgrades">
+          <a href="#" onclick="buyMultiplier()"
+            ><span id="amountMultiplier2"></span
+          ></a>
+        </button>
+        <p id="costMultiplier">200 Cookies</p>
+        <p id="currentMultiplier">Current Multiplier is x1.</p>
+      </div>
+    </div>
+    <script src="cookie.js"></script>
+  </body>
+</html>
